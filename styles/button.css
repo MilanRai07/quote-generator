@@ -1,0 +1,190 @@
+/*common button style here*/
+button{
+    background-color:#008080;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    color:#FFFFE0;
+}
+button:hover{
+    background-color:#006d6d;
+}
+/*for the random button here*/
+.quote-btn{
+   width:110px;
+   height:40px;
+   padding:0px 2px 0px;
+   font-weight:bold;
+}
+/*for text increase/decrease buttons here*/ 
+.button-container{
+    position:absolute;
+    bottom:12px;
+    right:15px;
+    display:flex;
+    align-items:end;
+    gap:5px;
+}
+.text-btn{
+    width:35px;
+}
+.small-btn{
+    height:20px;
+}
+.medium-btn{
+    height:30px;
+}
+.large-btn{
+    height:40px;
+}
+/*for next and previous button here*/
+.navigate-btn{
+    position:absolute;
+    top:50%;
+    height:34px;
+    width:60px;
+    background-color:#FF6F61
+}
+.navigate-btn:hover{
+    background-color:#D9594C;
+}
+.prev-btn{
+    left:-12%;
+}
+.next-btn{
+    right:-12%;
+}
+
+@media only screen and (max-width:804px){
+    /*previous and next button*/
+  .prev-btn{
+    left:-15%;
+  }
+  .next-btn{
+    right:-15%;
+  }
+}
+@media only screen and (max-width:658px){
+    /*for random button*/
+    .quote-btn{
+        font-size:12px;
+        width:100px;
+        height:30px;
+    }
+    /*for text increase/decrease button*/
+    .button-container{
+        gap:3px;
+    }
+    .text-btn{
+        width:25px;
+        font-size:12px;
+    }
+    .small-btn{
+        height:15px;
+    }
+    .medium-btn{
+        height:25px;
+    }
+    .large-btn{
+        height:35px;
+    }
+    /*for next/previous button*/
+    .navigate-btn{
+        height:30px;
+        width:50px;
+        font-size:12px;
+    }
+    .prev-btn{
+      left:-17%;
+    }
+    .next-btn{
+      right:-17%;
+    }
+  
+}
+@media only screen and (max-width:478px){
+    /*for random button*/
+    .quote-btn{
+        font-size:10px;
+        width:90px;
+        height:20px;
+    }
+    /*for text increase/decrease button*/
+    .button-container{
+        gap:2px;
+    }
+    .text-btn{
+        width:23px;
+        font-size:10px;
+    }
+    .small-btn{
+        height:13px;
+    }
+    .medium-btn{
+        height:20px;
+    }
+    .large-btn{
+        height:30px;
+    }
+    /*for next/previous button*/
+    .navigate-btn{
+        height:25px;
+        width:43px;
+        font-size:10px;
+        top:105%;
+    }
+    .prev-btn{
+      left:20%;
+    }
+    .next-btn{
+      right:20%;
+    }
+  
+}  
+@media only screen and (max-width:360px){
+    /*for random button*/
+    .quote-btn{
+        font-size:9px;
+    }
+    /*for text increase/decrease button*/
+    .button-container{
+        gap:2px;
+    }
+    .text-btn{
+        width:20px;
+        font-size:8px;
+        border-radius:2px;
+    }
+    .small-btn{
+        height:11px;
+    }
+    .medium-btn{
+        height:18px;
+    }
+    .large-btn{
+        height:28px;
+    }
+    /*for next/previous button*/
+    .navigate-btn{
+        height:25px;
+        width:43px;
+        font-size:9px;
+        top:105%;
+    }
+    .prev-btn{
+      left:30%;
+    }
+    .next-btn{
+      right:30%;
+    }
+}  
+@media only screen and (max-width:263px){
+    /*for text increase/decrease button*/
+    .button-container{
+        gap:1px;
+        right:10px;
+    }
+    .text-btn{
+        width:17px;
+    }
+}  

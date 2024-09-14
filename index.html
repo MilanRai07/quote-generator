@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Generator</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/card.css">
     <link rel="icon" href="img/alphabet-q-icon.png" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/example.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello, This is a quote generator</h1>
+    <section>
+        <h2>Beautiful Quotes For You</h2>
+        <!--This container contains the casrd for quotes-->
+        <div class="quote-container">
+            <!--this div contains category, menu and light/dark mode feature-->
+            <div class="quote-info">
+                <p class="quote-category">motivational</p>
+                <p class="quote-menu">
+                    category
+                    <i class="fa fa-angle-down down" style="margin-left: 2px;" aria-hidden="true"></i>
+                </p>
+                <div class="color-mode">
+                    <div class="color-indicator">
+                        <img src="img/sun.png" height="20px" class="sun" alt="sun">
+                    </div>
+                    <div class="color-indicator">
+                        <img src="img/moon.png" height="20px" class="moon" alt="moon">
+                    </div>
+                </div>
+            </div>
+            <!--this div contains the quotes-->
+            <div class="quote">
+                <p>Life is what happens when you're busy making other plans.</p>
+                <p class="quote-author"><i>- Milan rai</i></p>
+            </div>
+            <!--this button is for generating random quotes-->
+            <div>
+                <button class="quote-btn">Random Quote</button>
+            </div>
+            <!--this div contains the buttons to increase/decrease fotn size of the quote-->
+            <div class="button-container">
+                <button class="small-btn text-btn">A</button>
+                <button class="medium-btn text-btn">A</button>
+                <button class="large-btn text-btn">A</button>
+            </div>
+            <!--This is the previous button-->
+            <button class="navigate-btn prev-btn">Previous</button>
+            <!--This is the next button-->
+            <button class="navigate-btn next-btn">Next</button>
+            <!-- <ul class="drop-menu">
+                <li>Life</li>
+                <li>Inspirational</li>
+                <li>Motivational</li>
+            </ul> -->
+        </div>
+    </section>
 </body>
+
 </html>

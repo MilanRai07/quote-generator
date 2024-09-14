@@ -14,7 +14,7 @@ let quotes = [
   {
     "id": "3",
     "quote": "The purpose of our lives is to be happy.",
-    "category": "happiness",
+    "category": "life",
     "author": "Dalai Lama"
   },
   {
@@ -44,7 +44,7 @@ let quotes = [
   {
     "id": "8",
     "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
-    "category": "self",
+    "category": "motivational",
     "author": "Ralph Waldo Emerson"
   },
   {
@@ -56,13 +56,13 @@ let quotes = [
   {
     "id": "10",
     "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "category": "happiness",
+    "category": "inspirational",
     "author": "Dalai Lama"
   },
   {
     "id": "11",
     "quote": "Success is not the key to happiness. Happiness is the key to success.",
-    "category": "success",
+    "category": "motivational",
     "author": "Albert Schweitzer"
   },
   {
@@ -110,7 +110,7 @@ let quotes = [
   {
     "id": "19",
     "quote": "The only person you are destined to become is the person you decide to be.",
-    "category": "self",
+    "category": "inspiraional",
     "author": "Ralph Waldo Emerson"
   },
   {
@@ -134,7 +134,7 @@ let quotes = [
   {
     "id": "23",
     "quote": "To succeed in life, you need two things: ignorance and confidence.",
-    "category": "humor",
+    "category": "life",
     "author": "Mark Twain"
   },
   {

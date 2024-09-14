@@ -1,0 +1,214 @@
+/*for quote main container box*/
+.quote-container{
+    text-align:center;
+    width:600px;
+    height:300px;
+    border-radius:10px;
+    padding:12px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+    #ffcccb url('../img/flower.png') no-repeat left / contain;
+    position:relative;
+ }
+
+ /* for category of shown quote, dropdown menu and light/dark mode*/
+ .quote-info{
+     display:flex;
+     justify-content:space-around;
+ }
+ /*category name*/
+ .quote-category{
+     background-color:#ff7f7f;
+     color:#ffff;
+     padding:3px 8px;
+     border-radius:22px;
+     display:flex;
+     align-items:center;
+ }
+ /*category menu*/
+ .quote-menu{
+     display:flex;
+     align-items:center;
+     cursor: pointer;
+ }
+ /*category drop-down menu (ul)*/
+ .drop-menu {
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+    top:40px;
+    font-size:14px;
+    z-index:10;
+    border:1px solid #ff7f7f;
+    border-radius:8px;
+    overflow:hidden;
+ } 
+ .drop-menu li{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:10px;
+    padding:5px;
+    background-color:#ffff;
+    border-bottom:1px solid #ff7f7f;
+    cursor:pointer;
+ }
+ .drop-menu li:hover{
+    background-color:#fff9c4;
+ }
+ .drop-menu li:last-child{
+    border-bottom:none;
+ }
+ /*light/dark mode*/
+ .color-mode{
+    display:flex;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid #ff7f7f;
+ }
+ .color-indicator{
+   width:40px;
+   background-color:#ff7f7f;
+   padding-top:5px;
+   cursor:pointer;
+ }
+ .color-indicator:hover{
+    transform:scale(1.1);
+    transition:0.7s ease;
+ }
+
+ /*for the main quote that is in the middle*/
+ .quote{
+     max-width:500px;
+     height:150px;
+     display:flex;
+     flex-direction:column;
+     justify-content:space-between;
+     margin:0 auto;
+     font-size:24px;
+     padding:10px;
+     box-sizing:border-box;
+ }
+ /*for name of the author*/
+ .quote-author{
+     text-align:end;
+     font-size:18px;
+ }
+ 
+@media only screen and (max-width:804px){
+  .quote-container{
+    width:500px;
+    height:300px;
+  }
+}
+@media only screen and (max-width:658px){
+    /*for quote main container box*/
+    .quote-container{
+      width:350px;
+      height:300px;
+    }
+     /*category name*/
+    .quote-category{
+        font-size:12px;
+        padding:0px 7px;
+    }
+    /*drop-down menu*/
+    .drop-menu li{
+        font-size:12px;
+        height:10px;
+        padding:5px;
+     }
+     /*light/dark mode*/
+     .sun, .moon{
+        height:15px;
+     }
+     /*for main quote*/
+     .quote{
+        font-size:20px;
+     }
+     /* for author of quote*/
+     .quote-author{
+        font-size:16px;
+     }
+}
+@media only screen and (max-width:478px){
+    /*for quote main container box*/
+    .quote-container{
+      width:350px;
+      height:230px;
+    }
+     /*category name*/
+    .quote-category{
+        font-size:12px;
+        padding:0px 7px;
+    }
+     /*category drop-down menu (ul)*/
+    .drop-menu {
+    top:35px;
+    } 
+    /*drop-down menu*/
+    .drop-menu li{
+        font-size:10px;
+        height:9px;
+        padding:3px;
+     }
+     /*light/dark mode*/
+     .sun, .moon{
+        height:11px;
+     }
+     .color-indicator{
+        width:35px;
+      }
+     /*for main quote*/
+     .quote{
+        font-size:18px;
+        height:110px;
+     }
+     /* for author of quote*/
+     .quote-author{
+        font-size:14px;
+     }
+}
+@media only screen and (max-width:360px){
+    /*for quote main container box*/
+    .quote-container{
+      width:100%;
+      height:230px;
+      border-radius:0px;
+    }
+     /*category name*/
+    .quote-category{
+        font-size:10px;
+    }
+     /*category drop-down menu (ul)*/
+    .drop-menu {
+    top:33px;
+    } 
+    /*drop-down menu*/
+    .drop-menu li{
+        font-size:9px;
+        height:8px;
+     }
+     /*light/dark mode*/
+     .sun, .moon{
+        height:10px;
+     }
+     .color-indicator{
+        width:33px;
+      }
+     /*for main quote*/
+     .quote{
+        font-size:16px;
+        height:100px;
+     }
+     /* for author of quote*/
+     .quote-author{
+        font-size:12px;
+     }
+}  
+  
+
+ 
