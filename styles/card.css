@@ -15,18 +15,9 @@
  }
 
  /* for category of shown quote, dropdown menu and light/dark mode*/
- .quote-info{
+ .quote-selector{
      display:flex;
      justify-content:space-around;
- }
- /*category name*/
- .quote-category{
-     background-color:#ff7f7f;
-     color:#ffff;
-     padding:3px 8px;
-     border-radius:22px;
-     display:flex;
-     align-items:center;
  }
  /*category menu*/
  .quote-menu{
@@ -45,6 +36,7 @@
     border:1px solid #ff7f7f;
     border-radius:8px;
     overflow:hidden;
+    display:none;
  } 
  .drop-menu li{
     display:flex;
@@ -92,6 +84,19 @@
      padding:10px;
      box-sizing:border-box;
  }
+ .quote div{
+   display:flex;
+   justify-content:space-between;
+ }
+  /*category name*/
+  .quote-category{
+   background-color:#ff7f7f;
+   color:#ffff;
+   padding:3px 8px;
+   border-radius:22px;
+   font-size:18px;
+   max-width:92px;
+}
  /*for name of the author*/
  .quote-author{
      text-align:end;
@@ -114,6 +119,8 @@
     .quote-category{
         font-size:12px;
         padding:0px 7px;
+        display:flex;
+        align-items:center;
     }
     /*drop-down menu*/
     .drop-menu li{
