@@ -28,8 +28,7 @@
  /*category drop-down menu (ul)*/
  .drop-menu {
     position:absolute;
-    left:50%;
-    transform:translate(-50%,0);
+    left:18%;
     top:40px;
     font-size:14px;
     z-index:10;

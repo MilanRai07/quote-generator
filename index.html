@@ -21,7 +21,7 @@
         <div class="quote-container">
             <!--this div contains category, menu and light/dark mode feature-->
             <div class="quote-selector">
-                <p class="quote-menu">
+                <p class="quote-menu" id="quote-menu" onclick="onClick()">
                     category
                     <i class="fa fa-angle-down down" style="margin-left: 2px;" aria-hidden="true"></i>
                 </p>
@@ -36,7 +36,7 @@
             </div>
             <!--this div contains the quotes displays dynamically-->
             <div class="quote" id="quote">
-                
+
             </div>
             <!--this button is for generating random quotes-->
             <div>
@@ -59,7 +59,21 @@
             </ul>
         </div>
     </section>
-      <script type="module" src="js/getData.js"></script>
+    <script type="module" src="js/getData.js"></script>
+    <script>
+        let showMenu = false;
+        let dropElement = document.querySelector('.drop-menu');
+        function onClick() {
+            if (!showMenu) {
+                dropElement.style.display = "block"
+                showMenu = true;
+            } else {
+                dropElement.style.display = "none"
+                showMenu = false;
+            }
+        }
+
+    </script>
 </body>
 
 </html>
