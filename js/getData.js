@@ -1,11 +1,13 @@
 import { quotes } from "../assets/quotes.js";
 
-function showQuote() {
+function showQuote(filteredQuotes) {
     //container where quotes will be displayed
     const quoteContainer = document.getElementById('quote');
+    //deleting the previous datas and add new HTML
+    quoteContainer.innerHTML = '';
 
     // Iterate each quotes and create innerHtml
-    quotes.forEach((element) => {
+    filteredQuotes.forEach((element) => {
         const { quote, category, author } = element;
 
         //create a div element to later append in container
@@ -22,5 +24,15 @@ function showQuote() {
         quoteContainer.appendChild(quoteElement);
     });
 }
+showQuote(quotes); //initially calling the shwowQuote function with all the quotes
 
-showQuote();
+//filtering the quotes according to the parameter 
+function filterQuote(getCategory) {
+    let filteredQuotes = quotes.filter((items) => {
+        return items.category == getCategory
+    })
+    //call the showQuote function again to show the new filtered quotes
+    showQuote(filteredQuotes)
+}
+//filterQuote functin is defined globally so that onClick works in the menu list items
+window.filterQuote = filterQuote;
