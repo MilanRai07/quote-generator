@@ -18,6 +18,7 @@
  .quote-selector{
      display:flex;
      justify-content:space-around;
+     margin-bottom:25px;
  }
  /*category menu*/
  .quote-menu{
@@ -74,16 +75,18 @@
  /*for the main quote that is in the middle*/
  .quote{
      max-width:500px;
-     height:150px;
-     display:flex;
-     flex-direction:column;
-     justify-content:space-between;
      margin:0 auto;
      font-size:24px;
      padding:10px;
      box-sizing:border-box;
  }
- .quote div{
+ .quote-div{
+   height:150px;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-between;
+ }
+ .quote-meta{
    display:flex;
    justify-content:space-between;
  }
@@ -171,7 +174,9 @@
      /*for main quote*/
      .quote{
         font-size:18px;
-        height:110px;
+     }
+     .quote-div{
+      height:110px;
      }
      /* for author of quote*/
      .quote-author{
@@ -208,7 +213,9 @@
      /*for main quote*/
      .quote{
         font-size:16px;
-        height:100px;
+     }
+     .quote-div{
+      height:110px;
      }
      /* for author of quote*/
      .quote-author{

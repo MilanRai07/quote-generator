@@ -21,7 +21,7 @@
         <div class="quote-container">
             <!--this div contains category, menu and light/dark mode feature-->
             <div class="quote-selector">
-                <p class="quote-menu" id="quote-menu" onclick="onClick()">
+                <p class="quote-menu" id="quote-menu" onclick="toggleMenu()">
                     category
                     <i class="fa fa-angle-down down" style="margin-left: 2px;" aria-hidden="true"></i>
                 </p>
@@ -51,7 +51,7 @@
             <!--This is the previous button-->
             <button class="navigate-btn prev-btn">Previous</button>
             <!--This is the next button-->
-            <button class="navigate-btn next-btn">Next</button>
+            <button class="navigate-btn next-btn" onclick="changeNext()">Next</button>
             <ul class="drop-menu">
                 <li onclick="filterQuote('life')">Life</li>
                 <li onclick="filterQuote('inspiration')">Inspirational</li>
@@ -60,20 +60,7 @@
         </div>
     </section>
     <script type="module" src="js/getData.js"></script>
-    <script>
-        let showMenu = false;
-        let dropElement = document.querySelector('.drop-menu');
-        function onClick() {
-            if (!showMenu) {
-                dropElement.style.display = "block"
-                showMenu = true;
-            } else {
-                dropElement.style.display = "none"
-                showMenu = false;
-            }
-        }
-
-    </script>
+    <script src="js/toggleDropDown.js"></script>
 </body>
 
 </html>
