@@ -20,7 +20,7 @@ function showQuote(getQuotes, index) {
         //add innerHTML 
         quoteElement.innerHTML = `
         <div class="quote-div">
-            <p>${quote}</p>
+            <p id="quote-text">${quote}</p>
             <div class="quote-meta">
                <p class="quote-category">${category}</p>
                <p class="quote-author"><i>- ${author}</i></p>

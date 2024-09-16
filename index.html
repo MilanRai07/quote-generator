@@ -44,9 +44,9 @@
             </div>
             <!--this div contains the buttons to increase/decrease fotn size of the quote-->
             <div class="button-container">
-                <button class="small-btn text-btn">A</button>
-                <button class="medium-btn text-btn">A</button>
-                <button class="large-btn text-btn">A</button>
+                <button class="small-btn text-btn" onclick="changeTextSize('small')">A</button>
+                <button class="medium-btn text-btn" onclick="changeTextSize('medium')">A</button>
+                <button class="large-btn text-btn" onclick="changeTextSize('large')">A</button>
             </div>
             <!--This is the previous button-->
             <button class="navigate-btn prev-btn" onclick="changePrevious()">Previous</button>
@@ -61,6 +61,7 @@
     </section>
     <script type="module" src="js/getData.js"></script>
     <script src="js/toggleDropDown.js"></script>
+    <script src="js/textSizeChange.js"></script>
 </body>
 
 </html>
