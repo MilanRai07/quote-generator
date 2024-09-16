@@ -63,7 +63,14 @@ function changePrevious() {
     }
     showQuote(filteredQuotes, currentIndex)
 }
+//genrate random quote and show random quote
+function generateRandom(){
+    const randomIndex=Math.floor(Math.random()*filteredQuotes.length);
+    currentIndex=randomIndex;
+    showQuote(filteredQuotes,currentIndex)
+} 
 //function is defined globally so that onClick attribute works in html
 window.filterQuote = filterQuote;
 window.changeNext = changeNext;
 window.changePrevious = changePrevious;
+window.generateRandom=generateRandom;
