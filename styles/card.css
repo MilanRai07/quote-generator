@@ -74,7 +74,7 @@
 
  /*for the main quote that is in the middle*/
  .quote{
-     max-width:500px;
+     width:500px;
      margin:0 auto;
      font-size:24px;
      padding:10px;
@@ -110,6 +110,9 @@
     width:500px;
     height:300px;
   }
+  .quote{
+   width:400px;
+  }
 }
 @media only screen and (max-width:658px){
     /*for quote main container box*/
@@ -137,6 +140,7 @@
      /*for main quote*/
      .quote{
         font-size:20px;
+        width:250px;
      }
      /* for author of quote*/
      .quote-author{

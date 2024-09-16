@@ -1,7 +1,7 @@
 import { quotes } from "../assets/quotes.js";
 
 let currentIndex = 0;
-let filteredQuotes=quotes; 
+let filteredQuotes = quotes;
 
 function showQuote(getQuotes, index) {
     //container where quotes will be displayed
@@ -10,7 +10,7 @@ function showQuote(getQuotes, index) {
     quoteContainer.innerHTML = '';
 
     if (index < 0 || index >= getQuotes.length) {
-     throw new Error("you have invalid index for the data");
+        throw new Error("you have invalid index for the data");
     } else {
         const { quote, category, author } = getQuotes[index];
         // Iterate each quotes and create innerHtml
@@ -35,12 +35,35 @@ showQuote(filteredQuotes, currentIndex); //initially calling the shwowQuote func
 
 //filtering the quotes according to the parameter 
 function filterQuote(getCategory) {
+    currentIndex=0;
     let storedQuotes = quotes.filter((items) => {
         return items.category == getCategory
     })
     //call the showQuote function again to show the new filtered quotes
     showQuote(storedQuotes, currentIndex)
-    filteredQuotes=storedQuotes;
+    filteredQuotes = storedQuotes;
 }
-//filterQuote functin is defined globally so that onClick works in the menu list items
+
+//chnage to next quote funcitn
+function changeNext() {
+    if (currentIndex >= filteredQuotes.length - 1) {
+        currentIndex = 0;
+    } else {
+        currentIndex++;
+    }
+    showQuote(filteredQuotes, currentIndex)
+}
+
+//change to previous quote function 
+function changePrevious() {
+    if (currentIndex == 0) {
+        currentIndex = filteredQuotes.length - 1;
+    } else {
+        currentIndex--;
+    }
+    showQuote(filteredQuotes, currentIndex)
+}
+//function is defined globally so that onClick attribute works in html
 window.filterQuote = filterQuote;
+window.changeNext = changeNext;
+window.changePrevious = changePrevious;
